@@ -214,6 +214,19 @@ a {
   display: block;
 }
 
+.hero h1 .mobile-line,
+.hero p .mobile-line {
+  display: none;
+}
+
+.hero h1 .desktop-line {
+  display: block;
+}
+
+.hero p .desktop-line {
+  display: inline;
+}
+
 .cta-btn {
   margin-top: 42px;
   display: inline-flex;
@@ -404,6 +417,16 @@ a {
   .hero p {
     font-size: 17px;
     line-height: 1.35;
+  }
+
+  .hero h1 .desktop-line,
+  .hero p .desktop-line {
+    display: none;
+  }
+
+  .hero h1 .mobile-line,
+  .hero p .mobile-line {
+    display: block;
   }
 
   .cta-btn {
