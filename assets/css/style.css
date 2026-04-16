@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+.mobile-only-break {
+  display: none;
+}
+
 .hero-wrap {
   position: relative;
   isolation: isolate;
@@ -343,6 +347,10 @@ a {
 }
 
 @media (max-width: 600px) {
+  .mobile-only-break {
+    display: inline;
+  }
+
   .hero-wrap {
     min-height: auto;
   }
