@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rush Detailing - Test Hero</title>
+  <meta name="description" content="Тестовый hero-блок Rush Detailing для согласования с заказчиком." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <main class="hero-wrap" id="top">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="#top" aria-label="Rush Detailing">
+          <img src="./assets/images/logo-rush.png" alt="Rush Detailing" />
+        </a>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="https://t.me/bakeev_ai" target="_blank" rel="noopener noreferrer">Главная</a>
+          <a href="https://t.me/bakeev_ai" target="_blank" rel="noopener noreferrer">Услуги</a>
+          <a href="https://t.me/bakeev_ai" target="_blank" rel="noopener noreferrer">О компании</a>
+          <a href="https://t.me/bakeev_ai" target="_blank" rel="noopener noreferrer">Контакты</a>
+        </nav>
+
+        <div class="header-contact">
+          <a class="tg-btn" id="tgHeaderLink" href="https://t.me/rushdetailing" target="_blank" rel="noopener noreferrer" aria-label="Telegram Rush Detailing">
+            <img src="./assets/images/Telegram_2019_Logo.svg.png" alt="Telegram" />
+          </a>
+          <div class="contact-meta">
+            <p class="worktime">Ежедневно с 10:00 до 21:00</p>
+            <a class="phone" href="tel:+79254706712">+7 (925) 470-67-12</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Премиальный детейлинг">
+      <div class="hero-content">
+        <h1>
+          <span class="line">Премиальный детейлинг в</span>
+          <span class="line">Строгино с гарантией результата</span>
+        </h1>
+        <p>Полировка, керамика, химчистка. Работаем с дорогими авто. Даем честный результат без “разводов”</p>
+        <a id="ctaLink" class="cta-btn" href="https://t.me/rushdetailing" target="_blank" rel="noopener noreferrer">Записаться на детейлинг</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="credit">
+    <a id="creditLink" href="https://t.me/bakeev_ai" target="_blank" rel="noopener noreferrer">made by bakeev_ai</a>
+  </footer>
+
+  <script>
+    const LINKS = {
+      ctaHero: "https://t.me/rushdetailing",
+      headerTelegram: "https://t.me/rushdetailing",
+      credit: "https://t.me/bakeev_ai"
+    };
+
+    document.getElementById("ctaLink").href = LINKS.ctaHero;
+    document.getElementById("tgHeaderLink").href = LINKS.headerTelegram;
+    document.getElementById("creditLink").href = LINKS.credit;
+  </script>
+</body>
+</html>
