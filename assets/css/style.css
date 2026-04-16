@@ -27,13 +27,6 @@ a {
   text-decoration: none;
 }
 
-.mobile-hero-head,
-.mobile-title,
-.mobile-sub,
-.mobile-bottom-image {
-  display: none;
-}
-
 .hero-wrap {
   position: relative;
   isolation: isolate;
@@ -350,131 +343,47 @@ a {
 }
 
 @media (max-width: 600px) {
-  .site-header {
-    display: none;
-  }
-
   .hero-wrap {
     min-height: auto;
-    background-image: none;
-    background-color: #050506;
   }
 
-  .mobile-hero-head {
-    display: block;
-    padding: 12px 14px 0;
+  .header-inner {
+    padding-inline: 12px;
   }
 
-  .mobile-brand-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
+  .logo img { width: min(62vw, 220px); min-width: 130px; max-height: 54px; }
+
+  .main-nav {
+    gap: 8px 14px;
   }
 
-  .mobile-logo img {
-    width: 170px;
-    height: auto;
-    display: block;
+  .main-nav a {
+    font-size: 15px;
   }
 
-  .mobile-menu {
+  .header-contact {
+    gap: 9px;
+  }
+
+  .tg-btn {
     width: 44px;
-    height: 36px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    align-items: center;
+    height: 44px;
   }
 
-  .mobile-menu span {
-    width: 30px;
-    height: 3px;
-    border-radius: 3px;
-    background: #ffffff;
-    display: block;
+  .tg-btn img {
+    width: 22px;
+    height: 22px;
   }
 
-  .mobile-phone-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .worktime {
+    font-size: 12px;
   }
 
-  .mobile-call-icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 9px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #ff3a30 0%, #d60e0e 100%);
-    color: #fff;
-    font-size: 20px;
-  }
-
-  .mobile-phone-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .mobile-worktime {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.62);
-    font-weight: 500;
-  }
-
-  .mobile-phone {
-    font-size: 22px;
-    font-weight: 800;
-    color: #fff;
-  }
+  .phone { font-size: 14px; }
 
   .hero {
     min-height: auto;
-    padding: 26px 14px 0;
-    text-align: left;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .mobile-title {
-    display: block;
-    margin: 0 0 18px;
-    font-size: 56px;
-    line-height: 1.03;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
-  }
-
-  .mobile-title .red {
-    display: block;
-    color: #ff2a1d;
-  }
-
-  .mobile-title .white {
-    display: block;
-    color: #f0f0f0;
-  }
-
-  .hero h1 {
-    display: none;
-  }
-
-  .hero p {
-    display: none;
-  }
-
-  .mobile-sub {
-    display: block;
-    margin: 0 0 26px;
-    font-size: 16px;
-    line-height: 1.35;
-    color: rgba(255, 255, 255, 0.72);
-    font-weight: 600;
+    padding: 26px 14px 44px;
   }
 
   .hero h1 {
@@ -482,32 +391,17 @@ a {
     line-height: 1.08;
   }
 
-  .cta-btn {
-    width: 100%;
-    max-width: none;
-    font-size: 20px;
-    min-height: 76px;
-    margin-top: 0;
-    text-transform: uppercase;
-    border-radius: 18px;
-    font-weight: 800;
-    padding-inline: 20px;
-    box-shadow: 0 10px 24px rgba(217, 21, 21, 0.3);
+  .hero p {
+    font-size: 17px;
+    line-height: 1.35;
   }
 
-  .mobile-bottom-image {
-    display: block;
-    margin-top: 18px;
-    width: calc(100% + 28px);
-    margin-left: -14px;
-    height: 290px;
-    background-image:
-      linear-gradient(to top, rgba(5, 5, 6, 1) 0%, rgba(5, 5, 6, 0) 28%),
-      linear-gradient(to bottom, rgba(5, 5, 6, 0) 70%, rgba(5, 5, 6, 0.96) 100%),
-      url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+  .cta-btn {
+    width: 100%;
+    max-width: 340px;
+    font-size: 21px;
+    min-height: 54px;
+    margin-top: 22px;
   }
 
   .credit {
